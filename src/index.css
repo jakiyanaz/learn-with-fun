@@ -1,0 +1,1070 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+header {
+    padding: 10px;
+    z-index: 3;
+    width: 100%;
+    background-color: #FFDA59;
+    border-radius: 10px;
+}
+#logo {
+    height: 70px;
+    width: 70px;
+}
+
+#sidebarcomp {
+    width: 15rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    background-color: black;
+    color: white;
+    /* padding-top: 10rem; */
+}
+
+/* Home */
+#homepage {
+    /* height: 100vh; */
+    position: relative;
+    top: 8rem;
+    left: 0;
+    /* border: 2px solid red; */
+    z-index: 1;
+    padding: 0 2rem;
+    /* pointer-events: all; */
+}
+
+.descpara {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    padding: 3rem;
+}
+
+.descpara-heading {
+    font-size: 30px;
+    font-weight: bold;
+    color: purple;
+}
+
+.applistsec {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#quotesdesc p {
+    text-align: justify;
+}
+
+/* Footer */
+#footerpage {
+    padding: 0.5rem;
+    border: 2px solid #cb6ce6;
+    margin-top: 10rem;
+    border-radius: 2rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+
+/* Quotes */
+#quotespage {
+    /* border: 2px solid red; */
+    padding: 2rem;
+    height: 100vh;
+    position: relative;
+    top: 8rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 50px; */
+    z-index: 2;
+}
+#mainquotesdiv {
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 8px 0;
+    background-image: url("./assets/images/quotes_emoji.png");
+    background-size: cover;
+}
+#mainquotesdiv form {
+    border: 2px solid blue;
+    width: 100%;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    box-shadow: 0 0 4px 0;
+}
+#mainquotesdiv form select {
+    width: 70%;
+    height: 40px;
+    padding-inline: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #cb6ce6;
+}
+#btn-quotes-search {
+    background-color: #cb6ce6;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 25%;
+    border-radius: 10px;
+}
+#quotes-resultdiv {
+    /* border: 2px solid fuchsia; */
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    font-family: 'Abril Fatface';
+    font-size: 30px;
+    box-shadow: 0 0 4px 0;
+}
+
+/* Trivia */
+#trivia-app {
+    /* border: 2px solid red; */
+    height: 100vh;
+    position: relative;
+    top: 8rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 50px; */
+    z-index: 2;
+}
+
+#trivia-app #left, #right {
+    width: 45%;
+    /* border: 2px solid green; */
+    /* background-image: url("./assets/images/triviaimg3.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 10px;
+}
+#trivia-app #left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-image: url("./assets/images/triviaimg3.png");
+}
+#trivia-app #left form {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid #cb6ce6; */
+    border-radius: 15px;
+    width: 90%;
+    box-shadow: 0 0 8px 0 fuchsia;
+}
+.left-design {
+    width: 70%;
+    height: 40px;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.labels {
+    font-size: 25px;
+    font-weight: 500;
+}
+#btn-search {
+    background-color: #cb6ce6;
+    color: white;
+    /* border-radius: '10px'; */
+    font-size: 25px;
+    font-weight: bold;
+}
+#trivia-app #right {
+    /* border: 2px solid blue; */
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.ques-ans-div {
+    /* border: 2px solid violet; */
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 0 8px 0 fuchsia;
+}
+
+/* Facts App */
+#facts-app {
+    /* border: 2px solid red; */
+    height: 100vh;
+    position: relative;
+    top: 8rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 50px; */
+    z-index: 2;
+}
+
+#facts-app #facts-left, #facts-right {
+    width: 45%;
+    /* border: 2px solid green; */
+    /* background-image: url("./assets/images/triviaimg3.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 10px;
+}
+#facts-app #facts-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-image: url("./assets/images/triviaimg1.png");
+}
+#facts-app #facts-left form {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    /* border: 2px solid #cb6ce6; */
+    border-radius: 15px;
+    width: 90%;
+    box-shadow: 0 0 8px 0 fuchsia;
+}
+.facts-left-design {
+    width: 70%;
+    height: 40px;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+.facts-labels {
+    font-size: 25px;
+    font-weight: 500;
+}
+#btn-facts-search {
+    background-color: #cb6ce6;
+    color: white;
+    /* border-radius: '10px'; */
+    font-size: 25px;
+    font-weight: bold;
+}
+#facts-app #facts-right {
+    /* border: 2px solid blue; */
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.facts-ques-ans-div {
+    /* border: 2px solid violet; */
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 0 8px 0 fuchsia;
+}
+
+
+/* Planets app */
+#planets-app {
+    /* border: 2px solid red; */
+    padding-block: 3rem;
+    position: relative;
+    top: 8rem;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-image: url("./assets/images/planet_img4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+#important-points {
+    /* border: 2px solid red; */
+    width: 70%;
+    height: 10rem;
+    border-radius: 10px;
+    background-color: #FAFAD2;
+    padding: 10px;
+    box-shadow: 0 0 8px 0;
+    margin-bottom: 2rem;
+    overflow-y: scroll;
+}
+#wrapper-planet-app {
+    border:  2px solid #cb6ce6;
+    border-radius: 15px;
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    gap: 2rem;
+    box-shadow: 0 0 8px 0;
+}
+.internal-main-divs {
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    padding: 5px;
+}
+#search-form {
+    width: 100%;
+}
+#search-form form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#search-form form select {
+    width: 70%;
+    height: 40px;
+}
+#search-form form button {
+    /* border: 2px solid ; */
+    background-color: #cb6ce6;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 25%;
+    border-radius: 10px;
+}
+#planets-app-result {
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+}
+#planets-app-result p {
+    /* border: 2px solid crimson; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 8px 0 #cb6ce6;
+}
+.first-span {
+    font-size: 25px;
+    font-weight: 500;
+}
+.second-span {
+    font-size: 20px;
+}
+#planet-select {
+    border: 2px solid #cb6ce6;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+/* Thesaurus App */
+#thesaurus-app {
+    position: relative;
+    top: 8rem;
+    left: 0;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-inline: 3rem;
+    z-index: 2;
+}
+.thesaurus-sec {
+    /* border: 2px solid red; */
+    height: 90vh;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 #cb6ce6;
+}
+
+#thesaurus-left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#thesaurus-app-wrapper {
+    /* border: 2px solid blue; */
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#thesaurus-app-wrapper form {
+    /* border: 2px solid green; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#thesaurus-app-wrapper form #form-input {
+    border: 2px solid #cb6ce6;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    width: 70%;
+    padding: 10px;
+}
+#btn-thesaurus-app {
+    background-color: #cb6ce6;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 25%;
+    border-radius: 10px;
+}
+#thesaurus-app-result {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+#synonyms, #antonyms {
+    width: 50%;
+    /* border: 2px solid lime; */
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    overflow-y: scroll;
+    font-size: 22px;
+    box-shadow: 0 0 15px 0 #cb6ce6;
+}
+
+/* HistoricalEvents App */
+#historicalEvents-app {
+    /* border: 2px solid red; */
+    position: relative;
+    top: 8rem;
+    left: 0;
+    height: 200vh;
+    gap: 2rem;
+    background-image: url("./assets/images/historicaleventsimg4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+#historicalEvents-app-wrapper {
+    /* border: 2px solid green; */
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+#historicalEvents-imp-points {
+    width: 100%;
+    height: 10%;
+    padding: 20px;
+    box-shadow: 0 0 15px 0;
+    color: white;
+    overflow: scroll;
+}
+#historicalEvents-app-forms-div {
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 white;
+}
+.historicalEvents-app-forms {
+    /* border: 2px solid green; */
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.historicalEvents-app-forms input {
+    border: 2px solid #cb6ce6;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    padding-inline: 10px;
+    font-size: 20px;
+}
+.historicalEvents-app-forms button {
+    background-color: #cb6ce6;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 80%;
+    border-radius: 10px;
+}
+#historicalEvents-app-result {
+    /* border: 2px solid green; */
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 white;
+    overflow-y: scroll;
+}
+.historicalEvents-result-ul {
+    background-image: url("./assets/images/historicaleventsimg1.jpg");
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* Riddles App */
+#riddles-app {
+    position: relative;
+    top: 8rem;
+    left: 0;
+    height: 100vh;
+    gap: 2rem;
+    background-image: url("./assets/images/thesaurusimg1.png");
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    z-index: 2;
+}
+.riddles-app-div {
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 15px 0 white
+}
+#riddles-app-div1 {
+    height: 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#riddles-app-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#riddles-app-form input {
+    width: 70%;
+    height: 40px;
+    border: 2px solid #cb6ce6;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-inline: 10px;
+}
+
+#riddles-app-form button {
+    width: 30%;
+    background-color: #cb6ce6;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#riddles-app-result {
+    height: 90%;
+    overflow-y: scroll;
+}
+.riddle-result-div {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+.riddle-result-div button {
+    background-color: #71c9df;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#riddle-answer {
+    display: none;
+}
+
+/* Historical Figures App */
+#historical-figures-app {
+    position: relative;
+    top: 8rem;
+    left: 0;
+    height: 100vh;
+    gap: 2rem;
+    background-image: url("./assets/images/historyimg3.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    z-index: 2;
+}
+.historical-figure-app-div {
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 0 15px 0 white;
+}
+#historical-figures-app-div1 {
+    height: 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#historical-figures-app-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#historical-figures-app-form input {
+    width: 70%;
+    height: 40px;
+    border: 2px solid #cb6ce6;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-inline: 10px;
+}
+#historical-figures-app-form button {
+    width: 30%;
+    background-color: #cb6ce6;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#historical-figures-app-result {
+    height: 90%;
+    overflow-y: scroll;
+}
+.historical-figure-result-div {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Gocoding App */
+#geocoding-app {
+    position: relative;
+    top: 8rem;
+    left: 0;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-inline: 3rem;
+    z-index: 2;
+}
+.geocoding-sec {
+    /* border: 2px solid red; */
+    height: 90vh;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 #cb6ce6;
+}
+#geocoding-left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#geocoding-app-wrapper {
+    /* border: 2px solid blue; */
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#geocoding-app-wrapper form {
+    /* border: 2px solid green; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#geocoding-app-wrapper form #form-input {
+    border: 2px solid #cb6ce6;
+    font-size: 20px;
+    border-radius: 10px;
+    height: 40px;
+    width: 70%;
+    padding: 10px;
+}
+#btn-geocoding-app {
+    background-color: #cb6ce6;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    width: 25%;
+    border-radius: 10px;
+}
+#geocoding-app-result {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 0 15px 0 #cb6ce6;
+    overflow-y: scroll;
+}
+.geocoding-result-render {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 #cb6ce6;
+}
+
+
+
+/* @media screens */
+@media (max-width: 1450px) {
+    .media {
+      flex-direction: column;
+      gap: 0;
+    }
+    .reverseorder {
+        order: -1;
+    }
+}
+
+@media (max-width: 1200px) {
+    /* Thesaurus media query */
+    #thesaurus-app {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #thesaurus-left {
+        height: 50vh;
+    }
+    #thesaurus-app-wrapper form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #thesaurus-app-wrapper form #form-input {
+        width: 90%;
+    }
+    #btn-thesaurus-app {
+        width: 70%;
+    }
+    #thesaurus-app-result {
+        height: 80%;
+    }
+
+    /* Geocoding App */
+    #geocoding-app {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #geocoding-left {
+        height: 50vh;
+    }
+    #geocoding-app-wrapper form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #geocoding-app-wrapper form #form-input {
+        width: 90%;
+    }
+    #btn-geocoding-app {
+        width: 70%;
+    }
+    #geocoding-app-result {
+        height: 80%;
+    }
+}
+
+@media (max-width: 1100px) {
+    /* Thesaurus media query */
+    #thesaurus-app-result {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #synonyms, #antonyms {
+        width: 100%;
+    }
+}
+
+@media (max-width: 930px) {
+    /* Trivia media query */
+    #trivia-app {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #trivia-app #left form {
+        height: auto;
+        padding-block: 10px;
+    }
+    #trivia-app #left, #right {
+        width: 70%;
+    }
+
+    /* Facts App */
+    #facts-app {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #facts-app #facts-left form {
+        height: auto;
+        padding-block: 10px;
+    }
+    #facts-app #facts-left, #facts-right {
+        width: 70%;
+    }
+
+    /* Planet App */
+    #important-points {
+        width: 90%;
+    }
+    #wrapper-planet-app {
+        width: 90%;
+    }
+
+    /* Thesaurus media query */
+    .thesaurus-sec {
+        width: 90%;
+    }
+
+    /* Geocoding App */
+    .geocoding-sec {
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) {
+    /* Thesaurus media query */
+    .thesaurus-sec {
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    /* HistoricalEvents media query */
+    #historicalEvents-app-forms-div {
+        flex-direction: column;
+        height: auto;
+    }
+    .historicalEvents-app-forms {
+        width: 100%;
+    }
+    .historicalEvents-app-forms input {
+        width: 100%;
+    }
+    .historicalEvents-app-forms button {
+        width: 100%;
+    }
+
+    /* Quotes App */
+    #mainquotesdiv form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #mainquotesdiv form select {
+        width: 100%;
+    }
+    #mainquotesdiv form button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    #trivia-app #left, #right {
+        width: 100%;
+    }
+    #trivia-app #left form {
+        width: 100%;
+    }
+
+    /* Facts App */
+    #facts-app #facts-left, #facts-right {
+        width: 100%;
+    }
+    #facts-app #facts-left form {
+        width: 100%;
+    }
+
+    /* Planet App */
+    #search-form form {
+        flex-direction: column;
+        gap: 20px;
+    }
+    #search-form form button {
+        width: 70%;
+    }
+    #search-form form select {
+        width: 90%;
+    }
+    #important-points {
+        width: 100%;
+    }
+    #wrapper-planet-app {
+        width: 100%;
+        padding-inline: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    #homepage {
+        padding: 0;
+    }
+    .descpara {
+        padding: 0;
+    }
+    #footerpage {
+        padding: 10px;
+    }
+
+    /* Planet App */
+    #planets-app-result p {
+        flex-direction: column;
+    }
+    .first-span {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    /* Thesaurus media query */
+    #thesaurus-app {
+        padding-inline: 0;
+    }
+    .thesaurus-sec {
+        width: 100%;
+    }
+
+    /* HistoricalEvents media query */
+    #historicalEvents-imp-points h1 {
+        font-size: 20px;
+    }
+
+    /* Riddles App media Query */
+    #riddles-app-form {
+        flex-direction: column;
+    }
+    #riddles-app-div1 {
+        height: auto;
+    }
+    #riddles-app-form input {
+        width: 100%;
+    }
+    #riddles-app-form button {
+        width: 100%;
+    }
+
+    /* Historical Figures App */
+    #historical-figures-app-form {
+        flex-direction: column;
+    }
+    #historical-figures-app-div1 {
+        height: auto;
+    }
+    #historical-figures-app-form input {
+        width: 100%;
+    }
+    #historical-figures-app-form button {
+        width: 100%;
+    }
+
+    /* Geocoding App */
+    #geocoding-app {
+        padding-inline: 0;
+    }
+    .geocoding-sec {
+        width: 100%;
+    }
+
+    /* Quotes App */
+    #mainquotesdiv {
+        padding: 0;
+    }
+}
+
+@media (max-width: 230px) {
+    video {
+        width: 100%;
+    }
+}
