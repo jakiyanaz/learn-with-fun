@@ -76,9 +76,9 @@ const Quotes = () => {
           <button id='btn-quotes-search'>Search</button>
         </form>
           <div id="quotes-resultdiv" className='bg-yellow-100'>
-            <p id='quote-result-para'>{"Quote: " + quote.dataQuote}</p>
+            <p id='quote-result-para'><strong>Quote: </strong> {quote.dataQuote}</p>
             <br />
-            <p id='quote-author-para'>{"Author: " + quote.dataAuthor}</p>
+            <p id='quote-author-para'><strong>Author : </strong> {quote.dataAuthor}</p>
           </div>
       </div>
     </div>
